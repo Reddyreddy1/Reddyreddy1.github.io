@@ -1,1 +1,1 @@
-Welcome to Ruidi Wang's personal website
+# Welcome to Ruidi Wang's Website
