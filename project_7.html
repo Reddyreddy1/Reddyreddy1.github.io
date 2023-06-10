@@ -132,10 +132,11 @@
 
         <div class="col-sm-12 wow fadeInLeftBig">        
           <p class="lead">
-            The adaptive multi-domain cognitive training game is considered to be an effective approach for the cognitive rehabilitation of patients with cognitive decline. 
-            The efficacy of this training program is required to be examined, but the treatment effect for each individual usually differs substantively, which could be not easily interpreted with traditional methods. 
-            To identify distinct groups in trajectories of training outcomes, Latent class growth analysis (LCGA) and Growth Mixture Modelling (GMM) with the <i>hlme</i> function of the <i>lcmm</i> package were performed. 
-            Individuals with similar intercept and slope parameters are classified into the same subgroup.   
+            Resting state fluctuation amplitude (RSFA) characterizes the local features of spontaneous brain activity 
+            from the perspective of functional segregation. Several studies have suggested that resting state 
+            functional connectivity (RSFC) is probably driven by a few discrete and brief instances of spontaneous neuronal 
+            events rather than continuous activity. In this study, we wondered whether the the relavant information of RSFA 
+            could also be sufficiently represented by these temporally sparse events.   
           </p>
         </div>
 
@@ -144,17 +145,17 @@
 
 
     <div class="container">
-        <h4 id="background">My Contribution: Data Wrangling & Data Analysis</h4>
+        <h4 id="background">Methods</h4>
   
-          <div class="col-sm-12 wow fadeInLeftBig">        
+          <div class="col-sm-4 wow fadeInLeftBig">        
             <p class="lead">
-                1. Wrote R codes based on <i>tidyverse</i> package to conduct data wrangling of the MoCA scale and cognitive training score<br>
-                2. Wrote R codes based on <i>lcmm</i> package to run LCGA, GMM-1 and GMM-2 models, visualized model output, and conducted model comparison via multiple parameters<br> 
-                3. Wrote R codes based on <i>caret</i> and <i>nnet</i> packages to train and test multinomial classification model<br>
+                We tested the equivalence between RSFA measurement (fractional amplitude of low frequency fluctuation (fALFF) in particular) 
+                and its point process representation (PP-RSFA, i.e. the number of time points above a predefined threshold) 
+                by examining the their correlations across subjects as well as the sensitivities in detecting between-condition differences.<br>
             </p>
           </div>
   
-          <div class="col-sm-12 wow fadeInRightBig" >
+          <div class="col-sm-8 wow fadeInRightBig" >
               <p style="text-align:center">
                 <img src="figures/fig7-1.png" alt="fig7-1" width="100%" height="20%" >
               </p>
@@ -164,6 +165,17 @@
 
       <div class="container">
         <h4 id="demo 2">Results</h4>  
+       
+        <div class="col-sm-12 wow fadeInLeftBig">        
+            <p class="lead">
+                The results demonstrated that PP-RSFA was significantly correlated with fALFF 
+                in almost all the gray matter voxels, and had comparable sensitivity with fALFF in 
+                detecting the differences between eyes open and eyes closed states, only if the constraint
+                of local synchronization was imposed. Further analysis indicated that the efficiency of such 
+                constraint was primarily attributed to the temporal regularity of the discrete spontaneous events.<br>
+            </p>
+          </div>
+       
         <div class="col-sm-12 wow fadeInRightBig" >
           <p style="text-align:center">
             <img src="figures/fig7-2.png" alt="fig7-2" width="100%" height="20%" >
